@@ -25,8 +25,8 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
             </Text>
 
             <Button
-              mt={8} backgroundColor="#3f8caf"
-              colorScheme="brand"
+              mt={8}
+              colorScheme="blue"
               onClick={() => {
                 window.open("https://launchman.cc", "_blank");
               }}

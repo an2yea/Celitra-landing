@@ -97,7 +97,7 @@ const features: FeatureType[] = [
 
 export const App = () => {
   return (
-    <Layout>
+    <Layout >
       <Helmet>
         <meta charSet="utf-8" />
         <title> artDrop | the NFTs you want to see </title>
@@ -106,18 +106,7 @@ export const App = () => {
         <HeroSection />
         <Container maxW="container.xl">
           <Center p={[0, 10]}>
-            <video
-              playsInline
-              autoPlay
-              muted
-              poster="https://launchman-space.nyc3.digitaloceanspaces.com/biller-hero-2.png"
-              loop
-            >
-              <source
-                src="https://launchman-space.nyc3.digitaloceanspaces.com/biller-hero-2.webm"
-                type="video/mp4"
-              />
-            </video>
+            <Image src="ss.png"/>
           </Center>
         </Container>
 
