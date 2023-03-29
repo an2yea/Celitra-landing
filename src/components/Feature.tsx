@@ -55,7 +55,7 @@ export const Feature: FunctionComponent<FeatureProps> = ({
             </Text>
 
             <Button
-              colorScheme="brand"
+              colorScheme="blue"
               variant="link"
               textAlign={["center", "left"]}
             >
