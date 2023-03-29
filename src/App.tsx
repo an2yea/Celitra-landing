@@ -18,21 +18,18 @@ import { Helmet } from "react-helmet";
 
 const faqs: any[] = [
   {
-    q: "How many clients can I bring on?",
-    a: "You can bring on 3 clients with the Free plan. Upgrade to Pro for additional seats.",
+    q: "How does this work?",
+    a: "Simply add a prompt of the description of what image you want, and you can mint it's NFT to your account in seconds!",
   },
   {
-    q: "Can I connect it to my CRM?",
-    a: "Yes! We support Notion and PipeDrive currently.",
+    q: "Do I need to have a Metamask wallet?",
+    a: "You can use a wallet too yes, but you can login directly through any of your socials be it Gmail, facebook or discord!",
   },
   {
-    q: "Do you support international payments?",
-    a: "Yes - payments can be made from and to any country.",
+    q: "Where can I see the NFTs I Minted",
+    a: "They'll be visible on our website, and will be added to your account as well!",
   },
-  {
-    q: "Who can I connect to for support?",
-    a: "Email me at sukh@saasbase.dev",
-  },
+
 ];
 
 export interface HighlightType {
@@ -76,25 +73,25 @@ interface FeatureType {
 
 const features: FeatureType[] = [
   {
-    title: "Detailed Analytics",
+    title: "Level up your NFT game with AI-powered creation.",
     description:
-      "No more spending hours writing formulas in Excel to figure out how much you're making. We surface important metrics to keep your business going strong.",
+      "ArtDrop helps you create NFTs based on your prompts with the help of AI. This means you can elevate your NFT game and stand out from the crowd. Mint and flaunt your personalized NFTs on our platform today.",
     image:
-      "https://launchman-space.nyc3.digitaloceanspaces.com/chakra-ui-landing-page-feature-1.png",
+      "f1.png",
   },
   {
-    title: "Track your clients",
+    title: "Get started with NFTs hassle-free.",
     description:
-      "Know when and how your projects are going so you can stay on top of delivery dates.",
+      "Creating a wallet can be a barrier to entry for many interested in the world of NFTs. With ArtDrop, you can sign in without having to create a wallet – we take care of it for you. Get started with ease and start creating and minting your own NFTs today.",
     image:
-      "https://launchman-space.nyc3.digitaloceanspaces.com/chakra-ui-landing-page-feature-2.png",
+      "f2.png",
   },
   {
-    title: "Manage projects",
+    title: "Securely store and display your artwork with ease.",
     description:
-      "You don't have to hunt your email inbox to find that one conversation. Every task, project, and client information is just a click away.",
+      "Keep your NFTs safe by minting them directly to your wallet. ArtDrop makes it easy to create and showcase your artwork on the blockchain. No more worrying about storage or security—focus on sharing your talent with the world.",
     image:
-      "https://launchman-space.nyc3.digitaloceanspaces.com/chakra-ui-landing-page-feature-3.png",
+      "f3.png",
   },
 ];
 
@@ -103,7 +100,7 @@ export const App = () => {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Biller | Get paid faster</title>
+        <title> artDrop | the NFTs you want to see </title>
       </Helmet>
       <Box bg="gray.50">
         <HeroSection />
@@ -124,41 +121,11 @@ export const App = () => {
           </Center>
         </Container>
 
-        <Container maxW="container.2xl" centerContent py={[20]}>
-          <Text color="gray.600" fontSize="lg">
-            Used by teams worldwide
-          </Text>
-
-          <Wrap
-            spacing={[10, 20]}
-            mt={8}
-            align="center"
-            justify="center"
-            w="full"
-          >
-            <WrapItem>
-              <Image src="microsoft-logo.svg" alt="Microsoft logo" />
-            </WrapItem>
-
-            <WrapItem>
-              <Image src="adobe-logo.svg" alt="Adobe logo" />
-            </WrapItem>
-
-            <WrapItem>
-              <Image src="microsoft-logo.svg" alt="Microsoft logo" />
-            </WrapItem>
-
-            <WrapItem>
-              <Image src="adobe-logo.svg" alt="Adobe logo" />
-            </WrapItem>
-          </Wrap>
-        </Container>
-
         <VStack
           backgroundColor="white"
           w="full"
           id="features"
-          spacing={16}
+          spacing={4}
           py={[16, 0]}
         >
           {features.map(
@@ -175,26 +142,6 @@ export const App = () => {
             }
           )}
         </VStack>
-
-        <Container maxW="container.md" centerContent py={[8, 28]}>
-          <SimpleGrid spacingX={10} spacingY={20} minChildWidth="300px">
-            {highlights.map(({ title, description, icon }, i: number) => (
-              <Box p={4} rounded="md" key={`highlight_${i}`}>
-                <Text fontSize="4xl">{icon}</Text>
-
-                <Text fontWeight={500}>{title}</Text>
-
-                <Text color="gray.500" mt={4}>
-                  {description}
-                </Text>
-              </Box>
-            ))}
-          </SimpleGrid>
-        </Container>
-
-        <Container py={28} maxW="container.lg" w="full" id="pricing">
-          <PricingSection />
-        </Container>
 
         <Container py={28} maxW="container.md">
           <Box w="full">

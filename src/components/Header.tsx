@@ -24,7 +24,7 @@ import {
 const navLinks = [
   { name: "Home", link: "/" },
   { name: "Features", link: "#features" },
-  { name: "Pricing", link: "#pricing" },
+  { name: "Get Started", link: "/" },
 ];
 
 const DesktopSidebarContents = ({ name }: any) => {
@@ -37,13 +37,15 @@ const DesktopSidebarContents = ({ name }: any) => {
         direction={["column", "row"]}
       >
         <Box display={{ base: "none", md: "flex" }}>
-          <Heading fontSize="xl">{name}</Heading>
+          <Image src="blacklogo.svg" height='75px'></Image>
+          <Heading fontSize="xl"></Heading>
         </Box>
         <Spacer />
         <Stack
           align="flex-start"
           spacing={[4, 10]}
           direction={["column", "row"]}
+          alignItems='baseline'
         >
           {navLinks.map((navLink: any, i: number) => {
             return (
@@ -52,6 +54,7 @@ const DesktopSidebarContents = ({ name }: any) => {
                 key={`navlink_${i}`}
                 fontWeight={500}
                 variant="ghost"
+                mt='10%'
               >
                 {navLink.name}
               </Link>
@@ -59,11 +62,6 @@ const DesktopSidebarContents = ({ name }: any) => {
           })}
         </Stack>
         <Spacer />
-        <LinkBox>
-          <LinkOverlay href={`https://twitter.com/thisissukh_`} isExternal>
-            <Image src="twitter.svg"></Image>
-          </LinkOverlay>
-        </LinkBox>
       </Stack>
     </Container>
   );

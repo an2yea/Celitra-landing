@@ -17,26 +17,25 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
         <VStack>
           <Container maxW="container.md" textAlign="center">
             <Heading size="2xl" mb={4} color="gray.700">
-              You don't have to chase your clients around to get paid
+            Take your creativity to the blockchain with artDrop.
             </Heading>
 
             <Text fontSize="xl" color="gray.500">
-              Freelancers use Biller to accept payments and send invoices to
-              clients with a single click
+            ArtDrop makes it easy for anyone to create and showcase their own NFTs. Join the web3 revolution and share your unique creations with the world.
             </Text>
 
             <Button
-              mt={8}
+              mt={8} backgroundColor="#3f8caf"
               colorScheme="brand"
               onClick={() => {
                 window.open("https://launchman.cc", "_blank");
               }}
             >
-              I need this for $10/month →
+              Start Creating NFTs now!
             </Button>
 
             <Text my={2} fontSize="sm" color="gray.500">
-              102+ builders have signed up in the last 30 days
+              102+ people have signed up in the last 30 days
             </Text>
           </Container>
         </VStack>
