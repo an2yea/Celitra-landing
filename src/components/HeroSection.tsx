@@ -28,7 +28,7 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
               mt={8}
               colorScheme="blue"
               onClick={() => {
-                window.open("https://launchman.cc", "_blank");
+                window.open("https://art-drop-nft.vercel.app/", "_blank");
               }}
             >
               Start Creating NFTs now!

@@ -24,7 +24,7 @@ import {
 const navLinks = [
   { name: "Home", link: "/" },
   { name: "Features", link: "#features" },
-  { name: "Get Started", link: "/" },
+  { name: "Get Started", link: "https://art-drop-nft.vercel.app/" },
 ];
 
 const DesktopSidebarContents = ({ name }: any) => {
@@ -49,12 +49,12 @@ const DesktopSidebarContents = ({ name }: any) => {
         >
           {navLinks.map((navLink: any, i: number) => {
             return (
-              <Link
+              <Link variant="link"
                 href={navLink.link}
                 key={`navlink_${i}`}
                 fontWeight={500}
-                variant="ghost"
                 mt='10%'
+                colorScheme="blue"
               >
                 {navLink.name}
               </Link>

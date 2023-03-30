@@ -29,7 +29,7 @@ export const Feature: FunctionComponent<FeatureProps> = ({
       <Container maxW="container.xl" rounded="lg">
         <Stack
           spacing={[4, 16]}
-          alignItems="center"
+          alignItems="center" justifyContent='center'
           direction={["column", null, rowDirection]}
           w="full"
           h="full"
@@ -37,8 +37,8 @@ export const Feature: FunctionComponent<FeatureProps> = ({
           <Box rounded="lg">
             <Image
               src={image}
-              width={684}
-              height={433}
+              width={500}
+              height={500}
               alt={`Feature: ${title}`}
             />
           </Box>
@@ -54,13 +54,6 @@ export const Feature: FunctionComponent<FeatureProps> = ({
               {description}
             </Text>
 
-            <Button
-              colorScheme="blue"
-              variant="link"
-              textAlign={["center", "left"]}
-            >
-              Learn more →
-            </Button>
           </VStack>
         </Stack>
       </Container>

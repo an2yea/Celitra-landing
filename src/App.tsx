@@ -73,23 +73,23 @@ interface FeatureType {
 
 const features: FeatureType[] = [
   {
-    title: "Level up your NFT game with AI-powered creation.",
+    title: "No more remembering Seed Phrases, powered by Web3Auth",
     description:
-      "ArtDrop helps you create NFTs based on your prompts with the help of AI. This means you can elevate your NFT game and stand out from the crowd. Mint and flaunt your personalized NFTs on our platform today.",
+      " Login directly through your Socials (Gmail, facebook, discord etc) with Web3Auth. No need to create or connect Metamask wallet, we handle accounts for you.",
     image:
       "f1.png",
   },
   {
-    title: "Get started with NFTs hassle-free.",
+    title: "Zero transaction fees, we provide gas to fuel your creativity ",
     description:
-      "Creating a wallet can be a barrier to entry for many interested in the world of NFTs. With ArtDrop, you can sign in without having to create a wallet – we take care of it for you. Get started with ease and start creating and minting your own NFTs today.",
+      "The NFTs you Mint are free, owned by you. Access them anywhere, anytime without any app installs.",
     image:
       "f2.png",
   },
   {
-    title: "Securely store and display your artwork with ease.",
+    title: "Image Creation With Prompts using Stable Diffusion AI",
     description:
-      "Keep your NFTs safe by minting them directly to your wallet. ArtDrop makes it easy to create and showcase your artwork on the blockchain. No more worrying about storage or security—focus on sharing your talent with the world.",
+      "Simply add a prompt to inspire the image you want to create. Get an NFT of the image you create rendered on the website and mint them to your account in a couple of seconds!.",
     image:
       "f3.png",
   },
