@@ -55,6 +55,7 @@ const DesktopSidebarContents = ({ name }: any) => {
                 fontWeight={500}
                 mt='10%'
                 colorScheme="blue"
+                target="_self"
               >
                 {navLink.name}
               </Link>

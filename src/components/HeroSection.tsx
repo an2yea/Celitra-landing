@@ -5,6 +5,7 @@ import {
   Heading,
   Text,
   VStack,
+  Link
 } from "@chakra-ui/react";
 import { FunctionComponent } from "react";
 
@@ -24,15 +25,14 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = () => {
             ArtDrop makes it easy for anyone to create and showcase their own NFTs. Join the web3 revolution and share your unique creations with the world.
             </Text>
 
+            <a href="https://art-drop-nft.vercel.app/" target="_self">
             <Button
               mt={8}
               colorScheme="blue"
-              onClick={() => {
-                window.open("https://art-drop-nft.vercel.app/", "_blank");
-              }}
             >
               Start Creating NFTs now!
             </Button>
+            </a>
 
             <Text my={2} fontSize="sm" color="gray.500">
               102+ people have signed up in the last 30 days
