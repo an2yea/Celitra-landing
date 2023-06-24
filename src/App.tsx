@@ -87,9 +87,9 @@ const features: FeatureType[] = [
       "f2.png",
   },
   {
-    title: "Image Creation With Prompts using Stable Diffusion AI",
+    title: "All transactions executed Gaslessly",
     description:
-      "Simply add a prompt to inspire the image you want to create. Get an NFT of the image you create rendered on the website and mint them to your account in a couple of seconds!.",
+      "User does not have to pay for gas transaction or care about what gas really is, they can simply click on mint and we'll sposnor their gas",
     image:
       "f3.png",
   },
