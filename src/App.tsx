@@ -73,14 +73,14 @@ interface FeatureType {
 
 const features: FeatureType[] = [
   {
-    title: "No more remembering Seed Phrases, powered by Web3Auth",
+    title: "No more remembering Seed Phrases, powered by Particle Auth ",
     description:
-      " Login directly through your Socials (Gmail, facebook, discord etc) with Web3Auth. No need to create or connect Metamask wallet, we handle accounts for you.",
+      " Login directly through your Socials (Gmail, facebook, discord etc) with Particle Auth. No need to create or connect Metamask wallet, we handle accounts for you.",
     image:
       "f1.png",
   },
   {
-    title: "Zero transaction fees, we provide gas to fuel your creativity ",
+    title: "Mint Directly to your wallet using Particle Wallet  ",
     description:
       "The NFTs you Mint are free, owned by you. Access them anywhere, anytime without any app installs.",
     image:
@@ -100,7 +100,7 @@ export const App = () => {
     <Layout >
       <Helmet>
         <meta charSet="utf-8" />
-        <title> artDrop | the NFTs you want to see </title>
+        <title> Celitra | Create the NFTs you want to see </title>
       </Helmet>
       <Box bg="gray.50">
         <HeroSection />

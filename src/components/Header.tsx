@@ -37,7 +37,7 @@ const DesktopSidebarContents = ({ name }: any) => {
         direction={["column", "row"]}
       >
         <Box display={{ base: "none", md: "flex" }}>
-          <Image src="logo.svg" height='75px'></Image>
+          <Image src="celitra-logo.svg" height='75px'></Image>
           <Heading fontSize="xl"></Heading>
         </Box>
         <Spacer />
